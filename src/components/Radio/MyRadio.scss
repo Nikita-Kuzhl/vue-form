@@ -1,0 +1,35 @@
+.radio{
+  display: flex;
+  align-items: center;
+  position: relative;
+  &__active{
+    width: 12px;
+    height: 12px;
+    background: $purple;
+    border-radius: 32px;
+    position: absolute;
+    left: 6px;
+  }
+  &__input{
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 1px solid $light-gray;
+    border-radius: 32px;
+    cursor: pointer;
+    position: relative;
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 32px;
+  }
+  &__container{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    cursor: pointer;
+  }
+}

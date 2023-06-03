@@ -1,0 +1,45 @@
+.switch {
+  appearance: none;
+  width: 49px;
+  height: 24px;
+  border: 1px solid $light-gray;
+  border-radius: 32px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  &--active {
+    background: $purple;
+  }
+  &__wrapper {
+    display: flex;
+    column-gap: 16px;
+    width: 100%;
+    align-items: center;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  &__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+  }
+  &__tumbler {
+    width: 18px;
+    height: 18px;
+    background: #f4f4f4;
+    border-radius: 32px;
+    border: 1px solid $light-gray;
+    position: absolute;
+    right: 2px;
+    transition: all 0.4s ease-in-out;
+    &--active {
+      transform: translateX(-25px);
+      border: none;
+      background: white;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.checkbox {
+  appearance: none;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  &__wrapper {
+    display: flex;
+    column-gap: 16px;
+    width: 100%;
+    align-items: center;
+  }
+  &__container {
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+  }
+  &__icon {
+    position: absolute;
+    left: 3px;
+    top: 5px;
+  }
+}

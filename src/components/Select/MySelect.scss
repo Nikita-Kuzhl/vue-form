@@ -1,0 +1,84 @@
+.select {
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  &__container {
+    position: relative;
+  }
+  &__btn {
+    padding: 16px;
+    display: flex;
+    width: 100%;
+    background: white;
+    border: 2px solid $light-gray;
+    border-radius: 8px;
+    color: $gray;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    &--active {
+      border: 2px solid $purple;
+      border-bottom-right-radius: unset;
+      border-bottom-left-radius: unset;
+      border-bottom: unset;
+    }
+  }
+  &__list {
+    list-style: none;
+    border: 2px solid $light-gray;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    top: 0;
+    position: relative;
+  }
+  &__item {
+    padding: 16px;
+    background: white;
+    border-top: 2px solid $light-gray;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:first-child {
+      border-top: unset;
+    }
+    &:last-child {
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    &--active {
+      background: $purple;
+      color: white;
+    }
+  }
+  &__input {
+    display: none;
+  }
+}
+
+.list-enter-active {
+  animation: list 1s;
+}
+.list-leave-active {
+  animation: list 1s reverse;
+}
+
+@keyframes list {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    height: 100%;
+  }
+}
