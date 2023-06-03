@@ -49,13 +49,13 @@
 
 <script setup>
 import { ZodType } from 'zod';
-import MyInput from '../Input/MyInput.vue';
+import MyInput from '../input/MyInput.vue';
 import { useForm } from 'vee-validate';
-import MyButton from '@/components/Button/MyButton.vue';
-import MyCheckbox from '@/components/Checkbox/MyCheckbox.vue';
+import MyButton from '@/components/button/MyButton.vue';
+import MyCheckbox from '@/components/checkbox/MyCheckbox.vue';
 import MySwitch from '@/components/switch/MySwitch.vue';
-import MyRadio from '@/components/Radio/MyRadio.vue';
-import MySelect from '@/components/Select/MySelect.vue';
+import MyRadio from '@/components/radio/MyRadio.vue';
+import MySelect from '@/components/select/MySelect.vue';
 
 const props = defineProps({
   inputs: {
