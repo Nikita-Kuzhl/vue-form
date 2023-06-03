@@ -7,7 +7,7 @@
 import MyForm from '@/components/form/MyForm.vue';
 import zod from 'zod';
 import { ref } from 'vue';
-import MyModal from '@/components/Modal/MyModal.vue';
+import MyModal from '@/components/modal/MyModal.vue';
 const inputs = ref([
   {
     name: 'username',

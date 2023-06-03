@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import TransitionOpacity from '@/components/TransitionOpacity/TransitionOpacity.vue';
+import TransitionOpacity from '@/components/transition-opacity/TransitionOpacity.vue';
 
 defineProps({
   values: {

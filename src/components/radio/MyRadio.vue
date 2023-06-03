@@ -27,7 +27,7 @@
 import { ZodType } from 'zod';
 import { useField } from 'vee-validate';
 import { toTypedSchema } from '@vee-validate/zod';
-import TransitionOpacity from '@/components/TransitionOpacity/TransitionOpacity.vue';
+import TransitionOpacity from '@/components/transition-opacity/TransitionOpacity.vue';
 
 const props = defineProps({
   name: {
